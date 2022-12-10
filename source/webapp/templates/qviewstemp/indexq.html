@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+<a class="nav-link" href="{% url "qcreate" %}">Create!</a>
+{% endblock %}
+
+{% block content %}
+    <br/>
+    <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Polls&nbsp;<i class="bi bi-book"></i>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+    <br/>
+    <br/>
+    <h1><i class="bi bi-list-task"></i>Polls</h1>
+    <br/>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+    {% for polls in poll %}
+        <div class="col">
+  <div class="col">
+    <div class="card border-success">
+      <div class="card-body text-success">
+        <h5 class="card-title">Question: {{ polls.question }}</h5>
+{#        <p class="card-text">Status: {{ todoess.status }}</p>#}
+        <a href="{{ polls.get_absolute_url }}" class="btn btn-primary">Full view</a>
+          <a href="{% url 'a_index' polls.pk %}" class="btn btn-primary">Answer!</a>
+      </div>
+    </div>
+  </div>
+</div>
+        <br/>
+    {% endfor %}
+    </div>
+    <br/>
+    {% if is_paginated %}
+        {% include "partial/pagination.html" %}
+    {% endif %}      </div>
+    </div>
+  </div>
+  </div>
+
+
+</div>
+
+{% endblock %}

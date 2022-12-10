@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Delete Todo{% endblock %}
+{% block nav %}
+{% endblock %}
+{% block content %}
+    <h1>Are you sure want to delete choice? "{{ choice.text }}"?</h1>
+    <form method="POST" action="{% url "c_delete" choice.pk %}" class="text-center">
+        {% csrf_token %}
+        <p><input type="submit" value="Confirm" style="color: red"></p>
+        <p><button type="button" class="btn btn-info">
+<a style="text-decoration: none; color: black" href="{% url "detailq" choice.poll.pk %}">Cancel</a></button></p>
+    </form>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block nav %}
+<a class="nav-link" href="{% url "qupdate" poll.pk %}">Update!</a>
+<a class="nav-link" href="{% url "qdelete" poll.pk %}">Delete!</a>
+    <hr>
+    <a class="nav-link" href="{% url "c_create" poll.pk %}">Create choice!</a>
+{% endblock %}
+{% block content %}
+<br/>
+<div class="card border-success mb-3" style="max-width: 18rem;">
+  <div class="card-header bg-transparent border-success">Question</div>
+  <div class="card-body text-success">
+    <h5 class="card-title">Question: {{ poll.question }}</h5>
+  </div>
+    {% for answer in poll.poll.all %}
+  <div class="card-footer bg-transparent border-success"><p>{{ answer.text }}</p>
+<a href="{% url 'c_update' answer.pk %}" style="text-decoration: none; color: green"><i class="bi bi-file-diff"></i></a>
+<a href="{% url 'c_delete' answer.pk %}" style="text-decoration: none; color: green"><i class="bi bi-file-earmark-x"></i></a>
+</div>
+      {% endfor %}
+</div>
+{% endblock %}
