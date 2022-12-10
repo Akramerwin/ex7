@@ -1,0 +1,196 @@
+[
+{
+  "model": "webapp.poll",
+  "pk": 1,
+  "fields": {
+    "question": "How many money or how much?",
+    "q_date": "2022-12-10T06:38:18.391Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 4,
+  "fields": {
+    "question": "Что такое Марианская впадина?",
+    "q_date": "2022-12-10T08:08:02.702Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 5,
+  "fields": {
+    "question": "Сколько океанов в мире?",
+    "q_date": "2022-12-10T08:08:44.519Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 6,
+  "fields": {
+    "question": "Самая высокая гора в мире?",
+    "q_date": "2022-12-10T08:09:15.885Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 8,
+  "fields": {
+    "question": "Когда отменили крепостное право?",
+    "q_date": "2022-12-10T08:10:31.546Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 10,
+  "fields": {
+    "question": "Когда умер Сталин?",
+    "q_date": "2022-12-10T10:17:32.623Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 1,
+  "fields": {
+    "text": "How many",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 2,
+  "fields": {
+    "text": "How much",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 34,
+  "fields": {
+    "text": "1912",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 35,
+  "fields": {
+    "text": "1812",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 36,
+  "fields": {
+    "text": "1892",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 37,
+  "fields": {
+    "text": "1861",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 38,
+  "fields": {
+    "text": "Джомолунгма",
+    "poll": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 39,
+  "fields": {
+    "text": "Пик путина",
+    "poll": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 40,
+  "fields": {
+    "text": "6",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 41,
+  "fields": {
+    "text": "2",
+    "poll": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 42,
+  "fields": {
+    "text": "Впадина",
+    "poll": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 43,
+  "fields": {
+    "text": "океанический глубоководный жёлоб",
+    "poll": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 44,
+  "fields": {
+    "text": "бывшая",
+    "poll": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 48,
+  "fields": {
+    "text": "1950",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 49,
+  "fields": {
+    "text": "1960",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 50,
+  "fields": {
+    "text": "1953",
+    "poll": 10
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$da5olDfcbIPccLrSxd0sSi$TxV9TltfcLlKzeKaJ0lWcvod/M1x3j11yvlsMmJvxmo=",
+    "last_login": "2022-12-10T10:16:57.790Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-12-10T06:33:00.458Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
